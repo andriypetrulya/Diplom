@@ -8,7 +8,7 @@ $dbname = "vision_db";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("Ошибка подключения: " . $conn->connect_error);
+    die("Помилка підключення: " . $conn->connect_error);
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -35,6 +35,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
-// Закрытие соединения с базой данных
 $conn->close();
 ?>
