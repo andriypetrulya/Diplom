@@ -5,11 +5,11 @@ $apiKey = 'sk-proj-2nGCaTAuBdahtV2EEbgzT3BlbkFJDxl2s7Ar5j4bhYqC6Xxg';
 $url = 'https://api.openai.com/v1/chat/completions';
 
 $text = $_POST['vision'];
-$prompt = 'Если текст который я напишу ниже можно читать детям до 18, то напиши 1, иначе 0 \n' . $text;
+$prompt = 'Якщо текст, який я напишу нижче, можна читати дітям до 18, то напиши 1, інакше 0 \n' . $text;
 $data = [
     "model" => "gpt-4",
     "messages" => [
-        ["role" => "system", "content" => "Вы помощник, который оценивает уместность текста детям до 18 лет."],
+        ["role" => "system", "content" => "Ви є помічником, який оцінює доречність тексту дітям до 18 років."],
         ["role" => "user", "content" => $prompt]
     ],
     "max_tokens" => 10 
