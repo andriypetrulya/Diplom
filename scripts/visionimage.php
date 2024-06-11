@@ -33,9 +33,9 @@ function analyze_image_safety($imagePath)
         $safeSearch->getViolence() >= 3 ||  // POSSIBLE
         $safeSearch->getRacy() >= 3)  // POSSIBLE
     {
-        return false;  // Изображение не подходит для детей до 18 лет
+        return false;  
     }
-    return true;  // Изображение подходит для детей до 18 лет
+    return true;  
 }
 
 $imagePath = $_POST['vision'];
