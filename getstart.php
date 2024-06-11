@@ -110,7 +110,7 @@
                 </div>
                 
                 <div class="admin-panel">
-                    <p><?php echo $_SESSION['username']; ?> | <a href="logout.php">Выйти</a></p>
+                    <p><?php echo $_SESSION['username']; ?> | <a href="logout.php">Вийти</a></p>
                 </div>
             </div>
         </div>
